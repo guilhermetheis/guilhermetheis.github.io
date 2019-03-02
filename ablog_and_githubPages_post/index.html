@@ -53,6 +53,82 @@
 <h1>Using ABlog’s and Github Pages<a class="headerlink" href="#using-ablog-s-and-github-pages" title="Permalink to this headline">¶</a></h1>
 <p>This is a step-by-step to create an ABlog’s based blog using Github Pages as host site. I want to write this because this was not clear for me that have somewhat of a base in programming and RST. I hope this can help others and also remind me how to set up blogs if I need one day. The setup used here is an Ubuntu 18.04 LTS with python 3.7 (installed by using Anaconda – which is great for anyone who is working with data and data analysis as I am working right now). I will explain every installation to obtain the setup I am using.</p>
 <p>The whole propose of this is to be a “dumb proof” material. I’ve been doing this since I’ve entered the university with my study notes because I found out that what can sound easy to me sometimes is hard to someone else and vice-versa while this is also true for the present me, which means I am dumber depending on the moment of my life. That’s why I try to force myself to write and explain everything in the easiest way possible with maximum of detail possible, which can be boring sometimes.</p>
+<div class="section" id="what-is-ablog">
+<h2>What is Ablog?<a class="headerlink" href="#what-is-ablog" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://ablog.readthedocs.io/">Ablog</a> is an <a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html">Sphinx</a> extension that allows to easily set up a Sphinx based blog. Sphinx is a tool that makes easy to create documentation using <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>, it was written by Georg Brandl.</p>
+</div>
+<div class="section" id="python-install">
+<h2>Python install<a class="headerlink" href="#python-install" title="Permalink to this headline">¶</a></h2>
+<p>Firstly, I’ve installed my <code class="docutils literal notranslate"><span class="pre">python3</span></code> using Anaconda, doing this using <code class="docutils literal notranslate"><span class="pre">python2.7</span></code> doesn’t work. I am currently working with some data analysis and I find the Spyder3 environement perfect to do it, plus the <a class="reference external" href="https://www.anaconda.com/">Anaconda</a> install automates the installation of the different packages I may need. I am also using <a class="reference external" href="https://www.ubuntu.com/">Ubuntu</a> 18.04 LTS. Anaconda should also allow you to install different Python libraries using a GUI, which can be easier than using the terminal for beginners.</p>
+</div>
+<div class="section" id="ablog-installation">
+<h2>ABlog installation<a class="headerlink" href="#ablog-installation" title="Permalink to this headline">¶</a></h2>
+<p>To install Ablog using linux you need simply to use pip for the installation (this will required aditionnaly to install pip because this is not done by Anaconda) to do so you’ll need to run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install python3-pip
+pip install -U ablog
+</pre></div>
+</div>
+</div>
+<div class="section" id="setting-up-the-blog">
+<h2>Setting up the blog<a class="headerlink" href="#setting-up-the-blog" title="Permalink to this headline">¶</a></h2>
+<p>To set up the blog two <a class="reference external" href="https://github.com/">Github</a> repositories are required, the first repository for the generated files for the blog and a second one to host the site using Github <a class="reference external" href="https://pages.github.com/">Pages</a>. The first one you can call whatever you want, while the second respository needs to have exactly this format: <code class="docutils literal notranslate"><span class="pre">GithubUserName.github.io</span></code>. The domain of your blog is going to be then the same as the second respository name.</p>
+<p>Once you’ve created both of the repositories, you should clone the first one and run a <code class="docutils literal notranslate"><span class="pre">Ablog</span> <span class="pre">start</span></code>, the picture shows how to set it up. Once you’ve set your blog initially you can change your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file and customize a little bit the blog.</p>
+<div class="figure">
+<img alt="../_images/AblogStart.png" src="../_images/AblogStart.png" />
+</div>
+<p>Once this is set, we can customize the blog, but first lets talk about the structure created, your repository should be like this:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.
+├── about.rst
+├── conf.py
+├── first-post.rst
+├── index.rst
+├── _static
+└── _templates
+</pre></div>
+</div>
+<p>The two folders are used for static documents such as images and for different themes, respectively – I don’t mess much with the theme here, I like the Alabaster theme. The <code class="docutils literal notranslate"><span class="pre">about.rst</span></code> and the <code class="docutils literal notranslate"><span class="pre">first-post.rst</span></code> are two RST files created automatically, the first one to create some information about the site and the second one is your first blog post basically. The <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> created the index of your site. The <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> is the configuration of your website, that is going to translate the RST into HTML and so on.</p>
+</div>
+<div class="section" id="customization">
+<h2>Customization<a class="headerlink" href="#customization" title="Permalink to this headline">¶</a></h2>
+<p>To customize the website, we’ll modify the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file to customize the site. The first step is to add <a class="reference external" href="https://disqus.com/">Disqus</a> to enable comments to your posts. You’ll need to create an account and then add a site, once you’ve created your site you can see the <code class="docutils literal notranslate"><span class="pre">short-name</span></code> in the settings of the site and an URL is going to be generated, you need to add this into the <code class="docutils literal notranslate"><span class="pre">blog_baseurl</span></code> field and also add a new line called <code class="docutils literal notranslate"><span class="pre">disqus_shortname</span></code> (this should be located at the line 26 of your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>). You can see my configuration here:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Base URL for the website, required for generating feeds.</span>
+<span class="c1"># e.g. blog_baseurl = &quot;http://example.com/&quot;</span>
+<span class="n">blog_baseurl</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;https://guilherme-theis.disqus.com&#39;&#39;True&#39;</span>
+<span class="c1">#discus_shortname</span>
+<span class="n">disqus_shortname</span> <span class="o">=</span> <span class="s1">&#39;guilherme-theis&#39;</span>
+</pre></div>
+</div>
+<p>Then we can customize the HTML_theme, in the line 250 of the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>. This allow to add the logo of the site, the github repository, to use google analytics, etc. Here you can see my current settings:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;github_button&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+    <span class="s1">&#39;logo&#39;</span><span class="p">:</span> <span class="s1">&#39;gTheisBlogLogo.png&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;github_user&#39;</span><span class="p">:</span> <span class="s1">&#39;guilhermetheis&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;github_repo&#39;</span><span class="p">:</span> <span class="s1">&#39;gtheisBlog&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;body_text_align&#39;</span><span class="p">:</span> <span class="s1">&#39;justify&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;show_powered_by&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+    <span class="s1">&#39;analytics_id&#39;</span> <span class="p">:</span> <span class="s1">&#39;UA-135113128-1&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;font_family&#39;</span> <span class="p">:</span> <span class="s2">&quot;Times New Roman&quot;</span><span class="p">,</span>
+    <span class="c1">#&#39;font_size&#39;: &#39;large&#39;,</span>
+    <span class="c1">#&#39;rightsidebar&#39;: True,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The analytics_id allows to set up a google analytics tracking of your site, you can start using google analytics following <a class="reference external" href="https://support.google.com/analytics/answer/1008015?hl=en">this</a>.</p>
+</div>
+<div class="section" id="site-deploy">
+<h2>Site deploy<a class="headerlink" href="#site-deploy" title="Permalink to this headline">¶</a></h2>
+<p>Firstly is recommended to deploy your site locally to verify any bug you may have, so you need to first build it and then say that you want to deploy it locally by doing:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ablog build
+ablog serve
+</pre></div>
+</div>
+<p>The second command is going to open your website under the 127.0.0.1:8080. Then you can deploy your site using Github Pages by doing:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ablog build
+ablog deploy -p <span class="s2">&quot;../githubUserName.github.io/&quot;</span> -g <span class="s2">&quot;githubUserName&quot;</span> -m <span class="s2">&quot;commit message&quot;</span>
+</pre></div>
+</div>
+<p>This assuming that the path of your <code class="docutils literal notranslate"><span class="pre">githubUserName.github.io</span></code> is one folder up to the folders hierarchy, the path can be different. This will firstly pull your <code class="docutils literal notranslate"><span class="pre">githubUserName.github.io</span></code>, then add the files and then commit and push your website. Within 5 minutes your blog is going to online and updated.</p>
+</div>
 </div>
 
   <div class="section">
@@ -131,7 +207,7 @@
   <h2>
   
   <i class="fa fa-calendar"></i>
-    24 février 2019
+    02 mars 2019
   
   </h2>
 
