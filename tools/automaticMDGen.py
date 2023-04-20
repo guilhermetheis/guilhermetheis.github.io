@@ -29,7 +29,7 @@ def format_cat(cats):
     return a[:-1]
 
 def format_filename(date, title):
-    return f'{date}-{title.replace(" ", "-").lower()}.markdown'
+    return f'{date}-{title.replace(" ", "-").lower()}.md'
 
 def write_frontmatter(args, date, current_time):
     if format_cat(args.cats) is not None:
