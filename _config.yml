@@ -80,7 +80,7 @@ theme_mode:   # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: 'https://github.com/guilhermetheis/guilhermetheis.github.io'
 
 # the avatar on sidebar, support local or CORS resources
 avatar: https://pbs.twimg.com/profile_images/1157626214040973312/fVhfbdcz_400x400.jpg

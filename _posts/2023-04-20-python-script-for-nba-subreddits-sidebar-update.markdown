@@ -2,7 +2,7 @@
 title: Python script for NBA subreddits sidebar update
 date: 2023-04-20 10:52:29 +0200
 categories: ["Python,","PRAW"]
-tags: ["python,","reddit"]
+tags: ["python","reddit"]
 author: Guilherme Theis
 ---
 
@@ -26,7 +26,7 @@ In order to keep your repo actions running you need to constantly update the rep
 
 The LUTs are required to create the links properly. In old-reddit by linking a team in markdown as such `[](r/teamSubrredit)` the icon of said subreddit will appear which provides a nice look for the **schedule** and **standings** as such:
 
-![Icons in Sidebar](https://github.com/guilhermetheis/guilhermetheis.github.io/tree/main/_posts/redditSidebar_icons.png){:class="img-responsive"}
+![Icons in Sidebar](/_figs/redditSidebar_icons.png)
 
 In new reddit it will highlight this (as an hyperlink) and link directly to other teams subreddit. Because of how ESPN handles standings and schedules in their website you need to define two different LUTs. The examples for r/bostonceltics are below:
 
@@ -170,7 +170,7 @@ def check_string(string1, string2_series):
 
 To pick the desired roster one needs to get the ESPN link. To find this link all you need to do is to go to the team's ESPN page and tap into the `Roster` tab. For the Boston Celtics this link looks like this: `https://www.espn.com/nba/team/roster/_/name/bos/boston-celtics`
 
-![ESPN Roster](https://github.com/guilhermetheis/guilhermetheis.github.io/tree/main/_posts/ESPN_rosterpage.png)
+![ESPN Roster](/_figs/ESPN_rosterpage.png)
 
 Once we do this we can use pandas to extract the roster itself, we use the positional argument `[0]` to simply access the dataframe created. Then we create another variable to extract the links to the players profile with `table_roster_links_init = pd.read_html(roster_url,extract_links='body')[0]` and we extract only the link. Then we create a dictionary to use later to link each player name to its ESPN profile link, once we have re-arranged our table to be as we wish. 
 
