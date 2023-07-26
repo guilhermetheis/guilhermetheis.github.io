@@ -100,7 +100,7 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo:  https://github.com/guilhermetheis/guilhermetheis.github.io           # <gh-username>/<repo>
-    repo_id:
+    repo_id: R_kgDOHu6B_g
     category:
     category_id:
     mapping:          # optional, default to 'pathname'
