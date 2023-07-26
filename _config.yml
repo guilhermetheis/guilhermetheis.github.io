@@ -56,7 +56,7 @@ google_site_verification:               # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: UA-135113128                # fill in your Google Analytics ID
+  id: 'UA-135113128'                # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
@@ -99,10 +99,10 @@ comments:
     issue_term:   # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo:  'github.com/guilhermetheis/guilhermetheis.github.io'           # <gh-username>/<repo>
-    repo_id: 'R_kgDOHu6B_g'
-    category: 'General'
-    category_id: 'DIC_kwDOHu6B_s4CYI3P'
+    repo:  guilhermetheis/guilhermetheis.github.io           # <gh-username>/<repo>
+    repo_id: R_kgDOHu6B_g
+    category: General
+    category_id: DIC_kwDOHu6B_s4CYI3P
     mapping:          # optional, default to 'pathname'
     input_position:   # optional, default to 'bottom'
     lang:             # optional, default to the value of `site.lang`
