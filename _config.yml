@@ -99,7 +99,7 @@ comments:
     issue_term:   # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo:  'guilhermetheis/guilhermetheis.github.io'           # <gh-username>/<repo>
+    repo:  'github.com/guilhermetheis/guilhermetheis.github.io'           # <gh-username>/<repo>
     repo_id: 'R_kgDOHu6B_g'
     category: 'General'
     category_id: 'DIC_kwDOHu6B_s4CYI3P'
