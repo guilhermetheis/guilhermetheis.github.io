@@ -1,5 +1,5 @@
 ---
-title: Predicting the 23-24 Celtics rotattion and its current needs
+title: Predicting the 23-24 Celtics rotation and its current needs
 date: 2023-07-26 11:30:58 +0200
 categories: ["Basketball","Celtics"]
 tags: ["celtics,","analysis,","basketball"]
