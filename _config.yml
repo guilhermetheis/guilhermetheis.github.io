@@ -21,12 +21,12 @@ timezone: Europe/Amsterdam
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Gui's Projects                          # the main title
+title: Guilherme's website                         # the main title
 
-tagline: A place to remember and report projects  # it will display as the sub-title
+tagline: A place to expose the things I do for fun  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  This website will be used for my own projects history
+  I'll use this to store from texts I wrote to things I've stueid. Its all over the place
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://guilhermetheis.github.io'
@@ -56,7 +56,7 @@ google_site_verification:               # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id:                 # fill in your Google Analytics ID
+  id: UA-135113128                # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
@@ -99,7 +99,7 @@ comments:
     issue_term:   # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo:             # <gh-username>/<repo>
+    repo:  https://github.com/guilhermetheis/guilhermetheis.github.io           # <gh-username>/<repo>
     repo_id:
     category:
     category_id:
