@@ -1,7 +1,7 @@
 ---
 title: Python script for NBA subreddits sidebar update
 date: 2023-04-20 10:52:29 +0200
-categories: ["Python,","PRAW"]
+categories: ["Python","PRAW"]
 tags: ["python","reddit"]
 author: Guilherme Theis
 ---

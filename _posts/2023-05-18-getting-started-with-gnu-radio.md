@@ -2,7 +2,7 @@
 title: Getting started with GNU Radio
 date: 2023-05-18 22:06:08 +0200
 categories: ["Python","SDR"]
-tags: ["python","GNURadio,","SDR"]
+tags: ["python","GNURadio","SDR"]
 author: Guilherme Theis
 ---
 
