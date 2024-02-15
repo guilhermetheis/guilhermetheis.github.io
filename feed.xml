@@ -1,0 +1,234 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://guilhermetheis.github.io/</id>
+  <title>Guilherme's website</title>
+  <subtitle>I'll use this to store from texts I wrote to things I've stueid. Its all over the place</subtitle>
+  <updated>2024-02-15T18:53:08+01:00</updated>
+  <author>
+    <name>Guilherme Theis</name>
+    <uri>https://guilhermetheis.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://guilhermetheis.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://guilhermetheis.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
+  <rights> © 2024 Guilherme Theis </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Analysis of the occurrence of loss-streaks in Phil Jackson's rule teams</title>
+    <link href="https://guilhermetheis.github.io/posts/anaysing-the-occurance-of-loss-streaks-in-phil-jackson's-rule-teams/" rel="alternate" type="text/html" title="Analysis of the occurrence of loss-streaks in Phil Jackson's rule teams" />
+    <published>2024-02-15T17:30:08+01:00</published>
+  
+    <updated>2024-02-15T17:30:08+01:00</updated>
+  
+    <id>https://guilhermetheis.github.io/posts/anaysing-the-occurance-of-loss-streaks-in-phil-jackson's-rule-teams/</id>
+    <content src="https://guilhermetheis.github.io/posts/anaysing-the-occurance-of-loss-streaks-in-phil-jackson's-rule-teams/" />
+    <author>
+      <name>Guilherme Theis</name>
+    </author>
+
+  
+    
+    <category term="NBA" />
+    
+    <category term="Celtics" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      I did a small python script to retrieve this data. I’ll probably do a better job and round up a better analysis later on when I can fully work on it. I’ll probably do some sort of blog post about it so you can always check my twitter to see. I do warn you I mostly talk Celtics there.
+
+
+  Disclaimer 1: while I am saying this is an analysis Phil Jackson positive teams I am actually checking the t...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Predicting the 23-24 Celtics rotation and its current needs</title>
+    <link href="https://guilhermetheis.github.io/posts/predicting-the-23-24-celtics-rotation-and-its-current-needs/" rel="alternate" type="text/html" title="Predicting the 23-24 Celtics rotation and its current needs" />
+    <published>2023-07-26T11:30:58+02:00</published>
+  
+    <updated>2023-07-27T08:28:11+02:00</updated>
+  
+    <id>https://guilhermetheis.github.io/posts/predicting-the-23-24-celtics-rotation-and-its-current-needs/</id>
+    <content src="https://guilhermetheis.github.io/posts/predicting-the-23-24-celtics-rotation-and-its-current-needs/" />
+    <author>
+      <name>Guilherme Theis</name>
+    </author>
+
+  
+    
+    <category term="Basketball" />
+    
+    <category term="Celtics" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Assumptions
+
+
+  The Celtics are pushing for more double-big lineups
+  Both Payton Pritchard and Sam Hauser need to improve
+  Robert Williams needs to be somewhat healthy
+  Kristaps Porziņģis needs to be healthy
+
+
+Data sample
+
+The data used is going to be all from Basketball Reference, Basketball Index, 538, DARKO since these are the free-to-use websites available.
+
+The Double Big Conundrum
+
+The...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Re-learning DSP</title>
+    <link href="https://guilhermetheis.github.io/posts/re-learning-dsp/" rel="alternate" type="text/html" title="Re-learning DSP" />
+    <published>2023-05-19T08:25:23+02:00</published>
+  
+    <updated>2023-07-26T11:32:08+02:00</updated>
+  
+    <id>https://guilhermetheis.github.io/posts/re-learning-dsp/</id>
+    <content src="https://guilhermetheis.github.io/posts/re-learning-dsp/" />
+    <author>
+      <name>Guilherme Theis</name>
+    </author>
+
+  
+    
+    <category term="DSP" />
+    
+    <category term="SDR" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Why re-learn DSP
+
+Its been a few years since I last really worked with DSP and SDRs effectively, since I graduated in my masters. While I still remember the basic concepts (specially because I’m currently working with antenna and 5G hardware), how a few things are implemented and calculated need to be re-visited so I can properly build flow-charts in GNURadio for instance. I’ll be mostly using ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Getting started with GNU Radio</title>
+    <link href="https://guilhermetheis.github.io/posts/getting-started-with-gnu-radio/" rel="alternate" type="text/html" title="Getting started with GNU Radio" />
+    <published>2023-05-18T22:06:08+02:00</published>
+  
+    <updated>2023-07-27T08:28:11+02:00</updated>
+  
+    <id>https://guilhermetheis.github.io/posts/getting-started-with-gnu-radio/</id>
+    <content src="https://guilhermetheis.github.io/posts/getting-started-with-gnu-radio/" />
+    <author>
+      <name>Guilherme Theis</name>
+    </author>
+
+  
+    
+    <category term="Python" />
+    
+    <category term="SDR" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Installation &amp;amp; Setups
+
+I’m installing my GNU Radio using radioconda, this was recommended to me in the Matrix community of GNURadio. Most of the setups can be checked there.
+
+Learning
+
+I’ll start first by going through PySDR, then I’ll add in some sprinkles of Analog Devices Software-Defined Radio for Engineers. Theory will be presented in the post Re-learning DSP of ths website.
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Python script for NBA subreddits sidebar update</title>
+    <link href="https://guilhermetheis.github.io/posts/python-script-for-nba-subreddits-sidebar-update/" rel="alternate" type="text/html" title="Python script for NBA subreddits sidebar update" />
+    <published>2023-04-20T10:52:29+02:00</published>
+  
+    <updated>2023-07-27T08:28:11+02:00</updated>
+  
+    <id>https://guilhermetheis.github.io/posts/python-script-for-nba-subreddits-sidebar-update/</id>
+    <content src="https://guilhermetheis.github.io/posts/python-script-for-nba-subreddits-sidebar-update/" />
+    <author>
+      <name>Guilherme Theis</name>
+    </author>
+
+  
+    
+    <category term="Python" />
+    
+    <category term="PRAW" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This is, hopefully, an in-depth (ELI5) post on how I designed the script. We will use the github repository README as a starting point.
+
+Installation and usage
+
+The premise of the code is to use a combination of pandas and praw to get firstly markdown formatted tables from ESPN and then finally to paste those files into reddit. Then github actions to deploy the code every day, scheduled at give...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
